@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import CardDetail from "../component/CardDetail";
 import axios from "axios";
 import EditFormModal from "../component/Modal/EditFormModal";
+import DeleteFormModal from "../component/Modal/DeleteFormModal";
 
 const HomePage = () => {
   const [selectCar, setSelectCar] = useState({});
@@ -34,6 +35,7 @@ const HomePage = () => {
         ))}
       </div>
       <EditFormModal selectCar={selectCar} getCarList={getCarList} />
+      <DeleteFormModal selectCar={selectCar} getCarList={getCarList} />
     </div>
   );
 };

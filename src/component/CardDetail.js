@@ -19,10 +19,16 @@ const CardDetail = ({ carData, handleSelect }) => {
               data-bs-target="#editModal"
               onClick={handleSelect}
             >
-               แก้ไข
+              แก้ไข
             </button>
-            <button type="button" class="btn btn-danger">
-              ลบ
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#deleteModal"
+              onClick={handleSelect}
+            >
+                ลบ
             </button>
           </div>
         </div>
